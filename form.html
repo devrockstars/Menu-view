@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Menu Form</title>
+<style type="text/css">
+body { background-image: url(pic2.jpg);
+       background-repeat: no-repeat;
+       background-position: right;
+       background-attachment: fixed;
+       background-color: grey;}
+p label {font-size: 12pt; font-style: normal;}
+p {font-size: 20pt; font-weight:bold; font-color: deepskyblue;}
+h1 {text-align: center;}
+</style> 
+</head>
+<body>
+	<h1>Available Food Dishes</h1>
+	<p>Please fill this menu to make an order.</p>
+	<form method="post" action="http://deitel@deitel.com">
+		<input type="hidden" name="recipient" value="deitel@deitel.com">
+		<input type="hidden" name="subject" value="Feedbackform">
+		<input type="hidden" name="redirect" value="main.html">
+		<p><label>First Name:
+			<input type="text" name="fname" size="25"></label>
+		</p>
+		<p><label>Last Name:
+			<input type="text" name="lname" size="25"></label>
+		</p>
+		<p><label>E-mail:
+			<input type="password" name="email" size="30" placeholder="name@domain.com"></label>
+		</p>
+		<p><label>Contact:
+			<input type="tel" placeholder="(###)-###-####"></label>
+		</p>
+		<table border="0">
+			<thead>
+				<tr>
+					<th>Available Dishes</th>
+					<th>Drinks</th>
+					<th>Price</th>
+					<th>Quantity</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Vegetables</td>
+					<td>soda</td>
+					<td>35000</td>
+					<td>
+						<input type="number"
+					         min = "1"
+					         max = "10"
+					         value = "1">
+				    </td>
+				</tr>
+				<tr>
+					<td>Cereals</td>
+					<td>Haiwan Juice</td>
+					<td>15000</td>
+					<td>
+						<input type="number"
+					         min = "1"
+					         max = "10"
+					         value = "1">
+					</td>
+				</tr>
+				<tr>
+					<td>Fruits</td>
+					<td>Water</td>
+					<td>20000</td>
+					<td>
+						<input type="number"
+					         min = "1"
+					         max = "10"
+					         value = "1">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p><label>Description:<br>
+			<textarea name="comments" rows="4" cols="36">Enter your dish description:</textarea></label>
+		</p>
+		<p>
+			<label>Rate Us:
+				<select name="Rating">
+					<option selected>Amazing</option>
+					<option>10</option>
+					<option>9</option>
+					<option>8</option>
+					<option>7</option>
+					<option>6</option>
+					<option>5</option>
+					<option>4</option>
+					<option>3</option>
+					<option>2</option>
+					<option>1</option>
+					<option>Awful</option>
+				</select>
+			</label>
+		</p>
+		//Submission elements.
+		<p>
+			<input type="submit" value="submit">
+			<input type="reset" value="clear">
+		</p>
+	</form>
+</body>
+</html>
