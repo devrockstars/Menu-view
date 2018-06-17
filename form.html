@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title>Menu Form</title>
 <style type="text/css">
-body { background-image: url(pic2.jpg);
+body { 
+	   background-image: url(pic2.jpg);
        background-repeat: repeat;
        background-position: right;
        background-attachment: fixed;
@@ -13,6 +14,10 @@ body { background-image: url(pic2.jpg);
 p label {font-size: 12pt; font-style: normal;}
 p {font-size: 20pt; font-weight:bold; font-color: deepskyblue;}
 h1 {text-align: center;}
+div.menu{
+	     align-self: center;
+	     background-color: lightgrey;
+       }
 </style> 
 </head>
 <body>
@@ -34,20 +39,27 @@ h1 {text-align: center;}
 		<p><label>Contact:
 			<input type="tel" placeholder="(###)-###-####"></label>
 		</p>
+		<div class = "menu">
 		<table border="0">
 			<thead>
 				<tr>
 					<th>Available Dishes</th>
-					<th>Drinks</th>
-					<th>Price</th>
-					<th>Quantity</th>
+					<th>Available Drinks</th>
+					<th>Dish Prices</th>
+					<th>Drinks Prices</th>
+					<th></th>
+					<th>Quantity Required</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>Vegetables</td>
-					<td>soda</td>
-					<td>35000</td>
+					<td>Soda</td>
+					<td>5000</td>
+					<td>2000</td>
+					<td>
+						<input type = "checkbox">
+					</td>
 					<td>
 						<input type="number"
 					         min = "1"
@@ -59,6 +71,10 @@ h1 {text-align: center;}
 					<td>Cereals</td>
 					<td>Haiwan Juice</td>
 					<td>15000</td>
+					<td>10000</td>
+					<td>
+						<input type = "checkbox">
+					</td>
 					<td>
 						<input type="number"
 					         min = "1"
@@ -67,9 +83,13 @@ h1 {text-align: center;}
 					</td>
 				</tr>
 				<tr>
-					<td>Fruits</td>
+					<td>Chicken & Chips</td>
 					<td>Water</td>
 					<td>20000</td>
+					<td>1500</td>
+					<td>
+						<input type = "checkbox">
+					</td>
 					<td>
 						<input type="number"
 					         min = "1"
@@ -79,6 +99,7 @@ h1 {text-align: center;}
 				</tr>
 			</tbody>
 		</table>
+	</div>
 		<p><label>Description:<br>
 			<textarea name="comments" rows="4" cols="36">Enter your dish description:</textarea></label>
 		</p>
